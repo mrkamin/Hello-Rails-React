@@ -29,7 +29,7 @@ export const greetingSlice = createSlice({
             isLoading: false, 
             message: action.payload.message
         }))
-        .addCase(fetchGreeting.rejeted, (state) => ({
+        .addCase(fetchGreeting.rejected, (state) => ({
             ...state, 
             isLoading: false,
         }));
